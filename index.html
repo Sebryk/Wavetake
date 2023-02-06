@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./icons/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="60x60" href="./icons/favicon/favicon.ico">
+  <link rel="stylesheet" href="index.css">
+  <script src="./index.js" type="module"></script>
+  <title>Wavetake</title>
+</head>
+
+<body>
+  <!-- ------------------------ Header and Navigation ------------------------ -->
+  <header class="header" id="header">
+    <nav class="header__nav nav">
+      <a class="nav__logo" href="#header">WAVETAKE</a>
+      <div class="nav__menu"></div>
+      <ul class="nav__list">
+        <li class="nav__list-item" data-id="portfolio"><a class="nav__list-link " href="#portfolio">Works</a></li>
+        <li class="nav__list-item" data-id="about"><a class="nav__list-link" href="#about">About</a></li>
+        <li class="nav__list-item" data-id="contacts"><a class="nav__list-link" href="#contacts">Contacts</a></li>
+      </ul>
+      <div class="nav-icon icon">
+        <span class="icon__stripe"></span>
+        <span class="icon__stripe"></span>
+        <span class="icon__stripe"></span>
+      </div>
+    </nav>
+    <div class="header__content">
+      <a class="header__scroll scroll" href="#portfolio">
+        <div class="croll-icon"></div>
+      </a>
+      <div class="header__content-text">Best way to make it sound better</div>
+    </div>
+  </header>
+  <!-- -------------------------- Thumbnail Gallery -------------------------- -->
+  <section class="works">
+    <div class="works__thumbnail thumbnail" id="portfolio" data-id="section">
+    </div>
+    <button class="works__btn btn" type="button">Show More</button>
+  </section>
+  <section class="about" id="about" data-id="section">
+    <h2 class="about__title">What we do</h2>
+    <div class="about__wrap">
+      <div class="about__content">
+        <div class="about__content-text">
+          <h3 class="about__content-title">Music Production</h3>
+          <p class="about__content-desc">Professional audio and music production in different genres for all needs:
+            commercials, movies, video games, animations, events.</p>
+        </div>
+        <img class="about__content-icon about__content-icon--speaker" src="./icons/speaker.svg" alt="Speaker Icon">
+      </div>
+      <div class="about__content">
+        <div class="about__content-text">
+          <h3 class="about__content-title">Sound Design</h3>
+          <p class="about__content-desc">Sound design and foley from scratch using the best analog and digital equipment
+            with a modern audio production techniques.</p>
+        </div>
+        <img class="about__content-icon about__content-icon--headphones" src="./icons/headphones.svg"
+          alt="Headphones Icon">
+      </div>
+      <div class="about__content">
+        <div class="about__content-text">
+          <h3 class="about__content-title">SFX Audio</h3>
+          <p class="about__content-desc">Мы любим снимать интервью, работать с атмосферой места и характером каждого
+            героя.</p>
+        </div>
+        <img class="about__content-icon about__content-icon--mixer" src="./icons/mixer.svg" alt="Mixer Icon">
+      </div>
+      <div class="about__content">
+        <div class="about__content-text">
+          <h3 class="about__content-title">Restoration Audio</h3>
+          <p class="about__content-desc">Ежегодно мы работаем более чем с 10 площадками города. Мы снимаем музыкальные и
+            городские фестивали, создаем видео инсталляции.</p>
+        </div>
+        <img class="about__content-icon about__content-icon--microphone" src="./icons/microphone.svg"
+          alt="Microphone Icon">
+      </div>
+    </div>
+  </section>
+  <section class="contacts" id="contacts" data-id="section">
+    <h2 class="contacts__title">Contacts</h2>
+    <p class="contacts__text">Feel free to contact us. We really love to communicate with our clients.</p>
+    <form class="contacts__form form">
+      <input class="form__input-email" type="email" id="email" placeholder="Email Adress">
+      <input class="form__input-name" type="text" id="name" placeholder="Full Name">
+      <textarea class="form__textarea" name="comments" id="comments" cols="30" rows="10"
+        placeholder="Your Comments"></textarea>
+      <button class="form__btn btn" type="submit">Send</button>
+    </form>
+    <a class="header__scroll" href="#portfolio">
+      <div class="header__scroll-icon"></div>
+    </a>
+  </section>
+  <footer class="footer">
+    <div class="footer__contacts">
+      <a class="footer__contacts-email" href="mailto:info@wavetake.com">info@wavetake.com</a>
+      <div class="footer__contacts-social social">
+        <a class="social__link" href="https://www.instagram.com/wave_take/"><img
+            class="social__icon social__icon--instagram" src="./icons/social/instagram.svg" alt="Instagram Icon"></a>
+        <a class="social__link" href="https://www.facebook.com/sbrykalov/"><img
+            class="social__icon social__icon--facebook" src="./icons/social/facebook.svg" alt="Facebook Icon"></a>
+        <a class="social__link" href="https://t.me/sebryk"><img class="social__icon social__icon--telegram"
+            src="./icons/social/telegram.svg" alt="Telegram Icon"></a>
+        <a class="social__link" href="wa.link/9dvnp7"><img class="social__icon social__icon--whatsapp"
+            src="./icons/social/whatsapp.svg" alt="Whatsapp Icon"></a>
+        <a class="social__link" href="https://www.behance.net/sergeibrykalov"><img
+            class="social__icon social__icon--bechance" src="./icons/social/behance.svg" alt="Bechance Icon"></a>
+      </div>
+    </div>
+  </footer>
+  <!-- ------------------------- Pop Up Video Window -------------------------- -->
+  <div class="popup">
+    <img class="popup__close" src="./icons/crossmark.svg" alt="crossmark">
+  </div>
+</body>
+
+</html>
