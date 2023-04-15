@@ -6,7 +6,7 @@ export const showMoreBtn = () => {
 
   items = windowWidth >= 1500 ? 12 : windowWidth >= 1000 ? 9 : windowWidth >= 640 ? 6 : 3;
 
-  items >= thumbnailItemsCount && (showMoreBtn.style.display = 'block');
+  items < thumbnailItemsCount && (showMoreBtn.style.display = 'block');
 
   showMoreBtn.addEventListener('click', () => {
     items += windowWidth >= 1500 ? 12 : windowWidth >= 1000 ? 9 : windowWidth >= 640 ? 6 : 3;
