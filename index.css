@@ -549,7 +549,6 @@ body {
   overflow: hidden;
   cursor: pointer;
   transition: 0.5s ease;
-  box-shadow: 0px -9px 40px 11px rgba(144, 144, 144, 0.2) inset;
 }
 .thumbnail__item:nth-child(n+13) {
   display: none;
@@ -577,7 +576,7 @@ body {
 }
 @media (max-width: 768px) {
   .thumbnail__item:hover {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(192, 27, 27, 0);
   }
 }
 .thumbnail__item:hover .thumbnail__img {
@@ -615,7 +614,10 @@ body {
     top: 75%;
     gap: 5px;
     opacity: 1;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
 }
 .thumbnail__title {
