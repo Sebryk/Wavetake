@@ -22,7 +22,7 @@ export const popUp = () => {
 
   showVideo();
 
-  const openPopup = () => {
+  const openPopup = id => {
     popupClose.classList.add('popup__close--show');
     popupWindow.classList.add('popup--show');
     body.classList.add('body__lock');
@@ -37,9 +37,11 @@ export const popUp = () => {
   };
 
   const stopVideo = video => {
-    const saveAttribute = video.getAttribute('src');
-    video.setAttribute('src', '');
-    video.setAttribute('src', saveAttribute);
+    if (video.classList.contains('popup__video--show')) {
+      const saveAttribute = video.getAttribute('src');
+      video.setAttribute('src', '');
+      video.setAttribute('src', saveAttribute);
+    }
   };
 
   thumbnailItem.forEach(el => el.addEventListener('click', openPopup));
