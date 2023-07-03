@@ -13,7 +13,10 @@ export const popUp = () => {
         el.id;
         for (let i = 0; i < video.length; i++) {
           if (el.id == i + 1) {
-            video[i].classList.add('popup__video--show');
+            video[i].style.display = 'block';
+            setTimeout(() => {
+              return video[i].classList.add('popup__video--show');
+            }, 100);
           }
         }
       })
@@ -33,7 +36,12 @@ export const popUp = () => {
     popupWindow.classList.remove('popup--show');
     body.classList.remove('body__lock');
     video.forEach(el => stopVideo(el));
-    video.forEach(el => el.classList.remove('popup__video--show'));
+    video.forEach(el => {
+      setTimeout(() => {
+        return (el.style.display = 'none');
+      }, 200);
+      el.classList.remove('popup__video--show');
+    });
   };
 
   const stopVideo = video => {
