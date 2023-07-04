@@ -66,13 +66,10 @@ body {
       font-size: 20px;
       font-weight: 300;
       background-color: white;
-      // padding: 5px;
-      // transform: rotate(-90deg);
-      // border: 1px solid $grayColor;
       z-index: 0;
-      // left: 90px;
       bottom: 70px;
-      display: none;
+      display: block;
+      opacity: 0;
     }
   }
 
@@ -298,7 +295,7 @@ display: none;
   position:fixed;
   top:50%;
   left:50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);  
   display: flex;
   justify-content: center;
   align-items: center ;

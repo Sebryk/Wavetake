@@ -258,7 +258,8 @@ body {
   background-color: white;
   z-index: 0;
   bottom: 70px;
-  display: none;
+  display: block;
+  opacity: 0;
 }
 .header__scroll {
   position: absolute;
