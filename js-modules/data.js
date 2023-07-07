@@ -159,4 +159,31 @@ export const data = [
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_18.webp',
     videoUrl: 'https://player.vimeo.com/video/594527829?h=5340cec917',
   },
+
+  {
+    id: '19',
+    name: 'Avito Security',
+    services: 'Music, sound design, mixing & mastering',
+    imgUrlJpg: './images/thumbnail_images/thumbnail_img_19.jpg',
+    imgUrlWebp: './images/thumbnail_images/thumbnail_img_19.webp',
+    videoUrl: 'https://player.vimeo.com/video/841466043?h=eb123bd09d',
+  },
+
+  {
+    id: '20',
+    name: 'Oncologica',
+    services: 'Music, sound design, mixing & mastering',
+    imgUrlJpg: './images/thumbnail_images/thumbnail_img_20.jpg',
+    imgUrlWebp: './images/thumbnail_images/thumbnail_img_20.webp',
+    videoUrl: 'https://player.vimeo.com/video/841466009?h=4b45e02d5c',
+  },
+
+  {
+    id: '21',
+    name: 'Unique Concept',
+    services: 'Music, mixing & mastering',
+    imgUrlJpg: './images/thumbnail_images/thumbnail_img_21.jpg',
+    imgUrlWebp: './images/thumbnail_images/thumbnail_img_21.webp',
+    videoUrl: 'https://player.vimeo.com/video/665624727?h=c35abf7443',
+  },
 ];
