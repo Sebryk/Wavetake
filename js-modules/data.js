@@ -5,7 +5,7 @@ export const data = [
     services: 'Music, voice-over, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_1.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_1.webp',
-    videoUrl: 'https://player.vimeo.com/video/661583807?h=d6fbc24a02',
+    videoUrl: '//player.vimeo.com/video/661583807?h=d6fbc24a02',
   },
 
   {
@@ -14,7 +14,7 @@ export const data = [
     services: 'Music, sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_2.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_2.webp',
-    videoUrl: 'https://player.vimeo.com/video/654516356?h=a7c9ae8374',
+    videoUrl: '//player.vimeo.com/video/654516356?h=a7c9ae8374',
   },
 
   {
@@ -23,7 +23,7 @@ export const data = [
     services: 'Music, sound design, voice over mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_3.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_3.webp',
-    videoUrl: 'https://player.vimeo.com/video/809667662?h=403db257d4',
+    videoUrl: '//player.vimeo.com/video/809667662?h=403db257d4',
   },
 
   {
@@ -32,7 +32,7 @@ export const data = [
     services: 'Sound design & mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_4.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_4.webp',
-    videoUrl: 'https://player.vimeo.com/video/384230098?h=8760650f6e',
+    videoUrl: '//player.vimeo.com/video/384230098?h=8760650f6e',
   },
 
   {
@@ -41,7 +41,7 @@ export const data = [
     services: 'Sound design mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_5.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_5.webp',
-    videoUrl: 'https://player.vimeo.com/video/384230073?h=7c42a33643',
+    videoUrl: '//player.vimeo.com/video/384230073?h=7c42a33643',
   },
 
   {
@@ -50,7 +50,7 @@ export const data = [
     services: 'Music, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_6.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_6.webp',
-    videoUrl: 'https://player.vimeo.com/video/384229747?h=90df8cfadd',
+    videoUrl: '//player.vimeo.com/video/384229747?h=90df8cfadd',
   },
   {
     id: '7',
@@ -58,7 +58,7 @@ export const data = [
     services: 'Sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_7.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_7.webp',
-    videoUrl: 'https://player.vimeo.com/video/832611150?h=6ba62c1971',
+    videoUrl: '//player.vimeo.com/video/832611150?h=6ba62c1971',
   },
 
   {
@@ -67,7 +67,7 @@ export const data = [
     services: 'Sound design, voice over, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_8.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_8.webp',
-    videoUrl: 'https://player.vimeo.com/video/796586713?h=60eee1a38e',
+    videoUrl: '//player.vimeo.com/video/796586713?h=60eee1a38e',
   },
 
   {
@@ -76,7 +76,7 @@ export const data = [
     services: 'Music, sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_9.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_9.webp',
-    videoUrl: 'https://player.vimeo.com/video/809667954?h=7d3f334a2f',
+    videoUrl: '//player.vimeo.com/video/809667954?h=7d3f334a2f',
   },
 
   {
@@ -85,7 +85,7 @@ export const data = [
     services: 'Music, sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_10.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_10.webp',
-    videoUrl: 'https://player.vimeo.com/video/711359277?h=0197b46161',
+    videoUrl: '//player.vimeo.com/video/711359277?h=0197b46161',
   },
 
   {
@@ -94,7 +94,7 @@ export const data = [
     services: 'Music, sound design, voice-over, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_11.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_11.webp',
-    videoUrl: 'https://player.vimeo.com/video/594535966?h=9d919e088e',
+    videoUrl: '//player.vimeo.com/video/594535966?h=9d919e088e',
   },
 
   {
@@ -103,7 +103,7 @@ export const data = [
     services: 'Music, sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_12.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_12.webp',
-    videoUrl: 'https://player.vimeo.com/video/809667917?h=45a4cdf684',
+    videoUrl: '//player.vimeo.com/video/809667917?h=45a4cdf684',
   },
 
   {
@@ -112,7 +112,7 @@ export const data = [
     services: 'Music, sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_13.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_13.webp',
-    videoUrl: 'https://player.vimeo.com/video/609790989?h=02d23ead6f',
+    videoUrl: '//player.vimeo.com/video/609790989?h=02d23ead6f',
   },
 
   {
@@ -121,7 +121,7 @@ export const data = [
     services: 'Music, sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_14.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_14.webp',
-    videoUrl: 'https://player.vimeo.com/video/594533730?h=bddcd8946d',
+    videoUrl: '//player.vimeo.com/video/594533730?h=bddcd8946d',
   },
 
   {
@@ -130,7 +130,7 @@ export const data = [
     services: 'Music, voice, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_15.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_15.webp',
-    videoUrl: 'https://player.vimeo.com/video/384230024?h=7bd42e6d20',
+    videoUrl: '//player.vimeo.com/video/384230024?h=7bd42e6d20',
   },
 
   {
@@ -139,7 +139,7 @@ export const data = [
     services: 'Music, voice, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_16.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_16.webp',
-    videoUrl: 'https://player.vimeo.com/video/513772544?h=ecec7d7828',
+    videoUrl: '//player.vimeo.com/video/513772544?h=ecec7d7828',
   },
 
   {
@@ -148,7 +148,7 @@ export const data = [
     services: 'Music, sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_17.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_17.webp',
-    videoUrl: 'https://player.vimeo.com/video/609791333?h=d38238afc2',
+    videoUrl: '//player.vimeo.com/video/609791333?h=d38238afc2',
   },
 
   {
@@ -157,7 +157,7 @@ export const data = [
     services: 'Voice over, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_18.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_18.webp',
-    videoUrl: 'https://player.vimeo.com/video/594527829?h=5340cec917',
+    videoUrl: '//player.vimeo.com/video/594527829?h=5340cec917',
   },
 
   {
@@ -166,7 +166,7 @@ export const data = [
     services: 'Music, sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_19.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_19.webp',
-    videoUrl: 'https://player.vimeo.com/video/841466043?h=eb123bd09d',
+    videoUrl: '//player.vimeo.com/video/841466009?h=4b45e02d5c',
   },
 
   {
@@ -175,7 +175,7 @@ export const data = [
     services: 'Music, sound design, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_20.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_20.webp',
-    videoUrl: 'https://player.vimeo.com/video/841466009?h=4b45e02d5c',
+    videoUrl: '//player.vimeo.com/video/841466043?h=eb123bd09d',
   },
 
   {
@@ -184,6 +184,6 @@ export const data = [
     services: 'Music, mixing & mastering',
     imgUrlJpg: './images/thumbnail_images/thumbnail_img_21.jpg',
     imgUrlWebp: './images/thumbnail_images/thumbnail_img_21.webp',
-    videoUrl: 'https://player.vimeo.com/video/665624727?h=c35abf7443',
+    videoUrl: '//player.vimeo.com/video/665624727?h=c35abf7443',
   },
 ];
