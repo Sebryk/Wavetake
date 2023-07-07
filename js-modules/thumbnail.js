@@ -25,7 +25,7 @@ export const thumbnail = () => {
       'beforeend',
       `<iframe class="popup__video" id="item-${el.id}"
       title="vimeo-player" src="${el.videoUrl}"
-      allowfullscreen></iframe> `
+      allowfullscreen style="display: none;"></iframe> `
     )
   );
 };
