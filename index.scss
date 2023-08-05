@@ -453,9 +453,6 @@ display: none;
     overflow: hidden;
     cursor: pointer;
     transition: 0.5s ease;
-    // -webkit-box-shadow: 0px -9px 40px 11px rgba(144, 144, 144, 0.2) inset;
-    // -moz-box-shadow: 0px -9px 40px 11px rgba(144, 144, 144, 0.2) inset;
-    // box-shadow: 0px -9px 40px 11px rgba(144, 144, 144, 0.2) inset;
 
     &:nth-child(n + 13) {
       display: none;
@@ -572,6 +569,141 @@ display: none;
   }
 
 }
+
+/* ------------------------------ Audio Player ------------------------------ */
+.audio {
+  max-width: 1100px;
+  padding-inline: 20px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+
+.audio-player {
+  height: 50px;
+  width: 350px;
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid #444;
+  color: #444;
+  font-size: 0.95em;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: 6px auto;
+  .timeline {
+    height: 8px;
+    background: white;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    .progress {
+      background: #444;
+      width: 0%;
+      height: 100%;
+      transition: 0.25s;
+    }
+  }
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 20px;
+
+    > * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .toggle-play {
+      &.play {
+        cursor: pointer;
+        position: relative;
+        left: 0;
+        height: 0;
+        width: 0;
+        border: 7px solid #0000;
+        border-left: 13px solid #444;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      &.pause {
+        height: 15px;
+        width: 20px;
+        cursor: pointer;
+        position: relative;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0px;
+          background: #444;
+          content: "";
+          height: 15px;
+          width: 3px;
+        }
+        &:after {
+          position: absolute;
+          top: 0;
+          right: 10px;
+          background: #444;
+          content: "";
+          height: 15px;
+          width: 3px;
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .time {
+      display: flex;
+
+      > * {
+        padding: 2px;
+      }
+    }
+    .volume-container {
+      display: none;
+      cursor: pointer;
+      .volume-button {
+        height: 26px;
+        display: flex;
+        align-items: center;
+        .volume {
+          transform: scale(0.7);
+        }
+      }
+      
+      position: relative;
+      z-index: 2;
+      .volume-slider {
+        position: absolute;
+        transform: rotate(0deg);
+        left: -3px; top: 15px;
+        z-index: -1;
+        width: 0;
+        height: 15px;
+        background: white;
+        box-shadow: 0 0 20px #000a;
+        transition: .25s;
+        .volume-percentage {
+          background: #444;
+          height: 100%;
+          width: 75%;
+        }
+      }
+      &:hover {
+        .volume-slider {
+          left: -123px;
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
 
 /* ------------------------------ About Section ----------------------------- */
 
