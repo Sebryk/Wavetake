@@ -730,12 +730,24 @@ body {
   transition: 0.6s ease-out;
 }
 
-/* ------------------------------ Audio Player ------------------------------ */
+/* ------------------------------ Audio Section ------------------------------ */
 .audio {
   max-width: 1100px;
   padding-inline: 20px;
   margin: auto;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
+}
+.audio__title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  color: #444;
+}
+.audio__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
 }
 
 .audio-player {
@@ -747,6 +759,7 @@ body {
   color: #444;
   font-size: 0.95em;
   overflow: hidden;
+  justify-self: center;
   display: grid;
   grid-template-rows: 6px auto;
 }
