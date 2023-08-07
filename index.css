@@ -730,21 +730,21 @@ body {
   transition: 0.6s ease-out;
 }
 
-/* ------------------------------ Audio Section ------------------------------ */
-.audio {
+/* ------------------------------ music Section ------------------------------ */
+.music {
   max-width: 1100px;
   padding-inline: 20px;
   margin: auto;
   margin-bottom: 120px;
 }
-.audio__title {
+.music__title {
   text-align: center;
   font-size: 38px;
   margin-bottom: 50px;
   font-weight: 500;
   color: #444;
 }
-.audio__grid {
+.music__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 40px;
@@ -832,41 +832,6 @@ body {
 }
 .audio-player .controls .time > * {
   padding: 2px;
-}
-.audio-player .controls .volume-container {
-  display: none;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
-.audio-player .controls .volume-container .volume-button {
-  height: 26px;
-  display: flex;
-  align-items: center;
-}
-.audio-player .controls .volume-container .volume-button .volume {
-  transform: scale(0.7);
-}
-.audio-player .controls .volume-container .volume-slider {
-  position: absolute;
-  transform: rotate(0deg);
-  left: -3px;
-  top: 15px;
-  z-index: -1;
-  width: 0;
-  height: 15px;
-  background: white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6666666667);
-  transition: 0.25s;
-}
-.audio-player .controls .volume-container .volume-slider .volume-percentage {
-  background: #444;
-  height: 100%;
-  width: 75%;
-}
-.audio-player .controls .volume-container:hover .volume-slider {
-  left: -123px;
-  width: 120px;
 }
 
 /* ------------------------------ About Section ----------------------------- */

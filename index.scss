@@ -570,8 +570,8 @@ display: none;
 
 }
 
-/* ------------------------------ Audio Section ------------------------------ */
-.audio {
+/* ------------------------------ music Section ------------------------------ */
+.music {
   max-width: 1100px;
   padding-inline: 20px;
   margin: auto;
@@ -591,9 +591,6 @@ display: none;
     row-gap: 40px;
   }
 }
-
-
-
 
 .audio-player {
   height: 50px;
@@ -679,43 +676,6 @@ display: none;
 
       > * {
         padding: 2px;
-      }
-    }
-    .volume-container {
-      display: none;
-      cursor: pointer;
-      .volume-button {
-        height: 26px;
-        display: flex;
-        align-items: center;
-        .volume {
-          transform: scale(0.7);
-        }
-      }
-      
-      position: relative;
-      z-index: 2;
-      .volume-slider {
-        position: absolute;
-        transform: rotate(0deg);
-        left: -3px; top: 15px;
-        z-index: -1;
-        width: 0;
-        height: 15px;
-        background: white;
-        box-shadow: 0 0 20px #000a;
-        transition: .25s;
-        .volume-percentage {
-          background: #444;
-          height: 100%;
-          width: 75%;
-        }
-      }
-      &:hover {
-        .volume-slider {
-          left: -123px;
-          width: 120px;
-        }
       }
     }
   }

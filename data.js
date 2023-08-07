@@ -187,3 +187,11 @@ export const data = [
     videoUrl: '//player.vimeo.com/video/665624727?h=c35abf7443',
   },
 ];
+
+export const musicData = [
+  {
+    id: '1',
+    name: 'Music Track 1',
+    trackUrl: '../audio/Track 1.mp3',
+  },
+];
