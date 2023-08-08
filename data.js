@@ -191,7 +191,32 @@ export const data = [
 export const musicData = [
   {
     id: '1',
-    name: 'Music Track 1',
+    trackName: 'Music Track 1',
+    trackUrl: '../audio/Track_1.mp3',
+  },
+  {
+    id: '1',
+    trackName: 'Music Track 2',
+    trackUrl: '../audio/Track_2.wav',
+  },
+  {
+    id: '1',
+    trackName: 'Music Track 3',
+    trackUrl: '../audio/Track_3.wav',
+  },
+  {
+    id: '1',
+    trackName: 'Music Track 1',
+    trackUrl: '../audio/Track 1.mp3',
+  },
+  {
+    id: '1',
+    trackName: 'Music Track 1',
+    trackUrl: '../audio/Track 1.mp3',
+  },
+  {
+    id: '1',
+    trackName: 'Music Track 1',
     trackUrl: '../audio/Track 1.mp3',
   },
 ];
