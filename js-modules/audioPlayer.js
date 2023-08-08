@@ -40,16 +40,27 @@ export const audioPlayer = () => {
       progressBar.style.width = (audio.currentTime / audio.duration) * 100 + '%';
     }, 200);
 
+    let activeAudio = null;
+
     const playBtn = audioPlayer.querySelector('.controls .toggle-play');
     playBtn.addEventListener('click', () => {
+      if (activeAudio && activeAudio !== audio) {
+        activeAudio.pause();
+        const activePlayBtn = activeAudio.parentNode.querySelector('.toggle-play');
+        activePlayBtn.classList.remove('pause');
+        activePlayBtn.classList.add('play');
+      }
+
       if (audio.paused) {
         playBtn.classList.remove('play');
         playBtn.classList.add('pause');
         audio.play();
+        activeAudio = audio;
       } else {
         playBtn.classList.remove('pause');
         playBtn.classList.add('play');
         audio.pause();
+        activeAudio = null;
       }
     });
   };
