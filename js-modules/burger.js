@@ -23,5 +23,5 @@ export const burgerMenu = () => {
 
   navMenu.addEventListener('click', closeBurger);
 
-  menuLinks.forEach((el) => el.addEventListener('click', closeBurger));
+  menuLinks.forEach(el => el.addEventListener('click', closeBurger));
 };

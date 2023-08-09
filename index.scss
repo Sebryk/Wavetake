@@ -11,12 +11,18 @@
   scroll-behavior: smooth;
 }
 
-body {
-  min-width: 320px;
-}
+// html {
+//   // overflow-x: hidden;
+// }
+
+// body {
+//   // position: relative;
+//   overflow-x: hidden;
+//   min-width: 320px;
+// }
 
 .body__lock {
-  overflow:hidden;
+  overflow-y:hidden;
 }
 
 

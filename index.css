@@ -23,19 +23,6 @@
   src: url(./font/OpenSans_Condensed-Bold.ttf);
   font-weight: 800;
 }
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  display: block;
-}
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -209,12 +196,8 @@ template {
   scroll-behavior: smooth;
 }
 
-body {
-  min-width: 320px;
-}
-
 .body__lock {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 /* -------------------------- Header and Navigation ------------------------- */

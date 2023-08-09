@@ -3,7 +3,7 @@ import { musicData } from './data.js';
 export const audioPlayer = () => {
   const createAudioPlayer = (trackUrl, trackName) => {
     const audioPlayerTemplate = `
-      <div class="audio-player">
+      <div class="audio-player" data-track="${trackUrl}">
         <div class="timeline">
           <div class="progress"></div>
         </div>
@@ -17,11 +17,9 @@ export const audioPlayer = () => {
     `;
 
     const musicGrid = document.querySelector('.music__grid');
-    const playerContainer = document.createElement('div');
-    playerContainer.innerHTML = audioPlayerTemplate;
-    musicGrid.appendChild(playerContainer);
+    musicGrid.insertAdjacentHTML('beforeend', audioPlayerTemplate);
 
-    const audioPlayer = playerContainer.querySelector('.audio-player');
+    const audioPlayer = document.querySelector(`.audio-player[data-track="${trackUrl}"]`);
     const audio = new Audio(trackUrl);
 
     audio.addEventListener('loadeddata', () => {
@@ -40,27 +38,17 @@ export const audioPlayer = () => {
       progressBar.style.width = (audio.currentTime / audio.duration) * 100 + '%';
     }, 200);
 
-    let activeAudio = null;
-
     const playBtn = audioPlayer.querySelector('.controls .toggle-play');
-    playBtn.addEventListener('click', () => {
-      if (activeAudio && activeAudio !== audio) {
-        activeAudio.pause();
-        const activePlayBtn = activeAudio.parentNode.querySelector('.toggle-play');
-        activePlayBtn.classList.remove('pause');
-        activePlayBtn.classList.add('play');
-      }
-
+    playBtn.addEventListener('click', e => {
+      console.log(e.target);
       if (audio.paused) {
         playBtn.classList.remove('play');
         playBtn.classList.add('pause');
         audio.play();
-        activeAudio = audio;
       } else {
         playBtn.classList.remove('pause');
         playBtn.classList.add('play');
         audio.pause();
-        activeAudio = null;
       }
     });
   };
