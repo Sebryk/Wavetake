@@ -34,10 +34,10 @@ export const scroll = () => {
 
     if (scroll > 0) {
       navBar.classList.add('header__nav--scroll');
-      scrollIcon.style.left = '-40px';
+      scrollIcon.style.left = '-155px';
     } else if (scroll < 30) {
       navBar.classList.remove('header__nav--scroll');
-      scrollIcon.style.left = '30px';
+      scrollIcon.style.left = '20px';
     }
   });
 };

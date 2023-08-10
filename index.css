@@ -196,6 +196,11 @@ template {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
 .body__lock {
   overflow-y: hidden;
 }
@@ -247,7 +252,7 @@ template {
 .header__scroll {
   position: absolute;
   bottom: 30px;
-  left: 30px;
+  left: 20px;
   transition: 0.5s ease;
 }
 .header__scroll-icon {
@@ -264,7 +269,7 @@ template {
   content: "";
   position: absolute;
   top: 10px;
-  left: 12px;
+  left: 11px;
   width: 12px;
   height: 12px;
   border-left: 2px solid #434242;
@@ -273,6 +278,16 @@ template {
 }
 .header__scroll-icon:hover {
   opacity: 0.8;
+}
+.header__scroll-title {
+  position: absolute;
+  width: 150px;
+  top: -2px;
+  left: 50px;
+  font-family: OpenSansCondensed, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
 }
 @keyframes down {
   0% {
@@ -727,10 +742,20 @@ template {
   font-weight: 500;
   color: #444;
 }
+@media (max-width: 470px) {
+  .music__title {
+    font-size: 32px;
+  }
+}
 .music__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 40px;
+}
+@media (max-width: 768px) {
+  .music__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .audio-player {
@@ -745,6 +770,11 @@ template {
   justify-self: center;
   display: grid;
   grid-template-rows: 6px auto;
+}
+@media (max-width: 400px) {
+  .audio-player {
+    width: 290px;
+  }
 }
 .audio-player .timeline {
   height: 8px;
@@ -944,7 +974,7 @@ template {
   content: "";
   position: absolute;
   top: 14px;
-  left: 12px;
+  left: 11px;
   width: 12px;
   height: 12px;
   border-left: 2px solid #434242;

@@ -1,5 +1,3 @@
-import { data } from './data.js';
-
 export const popUp = () => {
   const thumbnailItem = document.querySelectorAll('.thumbnail__item');
   const popupWindow = document.querySelector('.popup');
@@ -25,7 +23,7 @@ export const popUp = () => {
 
   showVideo();
 
-  const openPopup = id => {
+  const openPopup = () => {
     popupClose.classList.add('popup__close--show');
     popupWindow.classList.add('popup--show');
     body.classList.add('body__lock');
