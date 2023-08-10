@@ -16,13 +16,15 @@
 // }
 
 body {
-  position: relative;
   overflow-x: hidden;
   min-width: 320px;
 }
 
 .body__lock {
-  overflow-y:hidden;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
 }
 
 
