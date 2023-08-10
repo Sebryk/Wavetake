@@ -197,6 +197,7 @@ template {
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
   min-width: 320px;
 }
