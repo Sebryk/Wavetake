@@ -592,6 +592,10 @@ display: none;
   padding-inline: 20px;
   margin: auto;
   margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &__title {
     text-align: center;
@@ -604,19 +608,42 @@ display: none;
     }
   }
 
-  &__grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 40px;
-    @media (max-width:768px) {
-      grid-template-columns: 1fr;
+  &__list {
+    width: 352px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #444;
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    // padding-block: 6px 10px;
+  }
+}
+
+.playlist {
+  width: 100%;
+  &__track{
+    border: 0.5px rgba(148, 148, 148, 0.2) solid;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:last-of-type{
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    &--hover {
+      background-color: rgba(245, 245, 245, 0.951);
+    }
+    &--active {
+      background-color: #444;
+      color: #fff;
     }
   }
 }
 
-.audio-player {
-  height: 50px;
-  width: 350px;
+.player {
+  height: 70px;
+  width: 380px;
   background: #fff;
   border-radius: 15px;
   border: 1px solid #444;
@@ -648,7 +675,7 @@ display: none;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    padding: 0 20px;
+    padding: 0 28px;
 
     > * {
       display: flex;
@@ -662,8 +689,8 @@ display: none;
         left: 0;
         height: 0;
         width: 0;
-        border: 7px solid #0000;
-        border-left: 13px solid #444;
+        border: 10px solid rgba(0, 0, 0, 0);
+        border-left: 20px solid #444;
         &:hover {
           transform: scale(1.1);
         }
@@ -675,26 +702,30 @@ display: none;
         position: relative;
         &:before {
           position: absolute;
-          top: 0;
+          top: -2px;
           left: 0px;
           background: #444;
           content: "";
-          height: 15px;
-          width: 3px;
+          height: 19px;
+          width: 5px;
         }
         &:after {
           position: absolute;
-          top: 0;
-          right: 10px;
+          top: -2px;
+          right: 6px;
           background: #444;
           content: "";
-          height: 15px;
-          width: 3px;
+          height: 19px;
+          width: 5px;
         }
         &:hover {
           transform: scale(1.1);
         }
+
       }
+    }
+    .name {
+      font-size: 20px;
     }
     .time {
       display: flex;
@@ -705,7 +736,6 @@ display: none;
     }
   }
 }
-
 
 /* ------------------------------ About Section ----------------------------- */
 

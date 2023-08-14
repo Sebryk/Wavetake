@@ -1,9 +1,11 @@
 import { musicData } from './data.js';
 
 export const audioPlayer = () => {
+  const playlist = musicData;
+
   const createAudioPlayer = (trackUrl, trackName) => {
     const audioPlayerTemplate = `
-      <div class="audio-player" data-track="${trackUrl}">
+      <div class="music__player player">
         <div class="timeline">
           <div class="progress"></div>
         </div>
@@ -16,10 +18,10 @@ export const audioPlayer = () => {
       </div>
     `;
 
-    const musicGrid = document.querySelector('.music__grid');
-    musicGrid.insertAdjacentHTML('beforeend', audioPlayerTemplate);
+    const musicPlayer = document.querySelector('.music__wrap');
+    musicPlayer.insertAdjacentHTML('beforeend', audioPlayerTemplate);
 
-    const audioPlayer = document.querySelector(`.audio-player[data-track="${trackUrl}"]`);
+    const audioPlayer = document.querySelector(`.music__player`);
     const audio = new Audio(trackUrl);
 
     audio.addEventListener('loadeddata', () => {
@@ -51,9 +53,72 @@ export const audioPlayer = () => {
         audio.pause();
       }
     });
+
+    return audio;
   };
 
-  musicData.forEach(track => {
-    createAudioPlayer(track.trackUrl, track.trackName);
+  // Create the audio player for the first track in the playlist
+  const currentAudio = createAudioPlayer(playlist[0].trackUrl, playlist[0].trackName);
+
+  const musicList = document.querySelector('.music__list');
+  musicList.insertAdjacentHTML(
+    'beforeend',
+    `
+      <ul class="playlist">
+        ${playlist
+          .map(
+            (track, index) => `
+          <li class="playlist__track" data-index="${index}">
+            ${track.trackName}
+          </li>
+        `
+          )
+          .join('')}
+      </ul>
+  `
+  );
+
+  const trackElements = document.querySelectorAll('.playlist__track');
+  const playBtn = document.querySelector('.controls .toggle-play');
+  trackElements.forEach((trackElement, index, array) => {
+    if (index === 0) {
+      trackElement.classList.add('playlist__track--active');
+    }
+    trackElement.addEventListener('click', e => {
+      trackElement.classList.add('playlist__track--active');
+      const selectedIndex = parseInt(trackElement.getAttribute('data-index'));
+      const selectedTrack = playlist[selectedIndex];
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+      currentAudio.src = selectedTrack.trackUrl;
+      currentAudio.load();
+      playBtn.classList.add('pause');
+      playBtn.classList.remove('play');
+      currentAudio.play();
+
+      // Update the currently playing track
+      const nameElement = document.querySelector('.controls .name');
+      nameElement.textContent = selectedTrack.trackName;
+      trackElements.forEach(otherTrackElement => {
+        if (otherTrackElement !== trackElement) {
+          otherTrackElement.classList.remove('playlist__track--active');
+          if (index === array.length - 1) {
+            trackElement.style.borderBottomLeftRadius = '14px';
+            trackElement.style.borderBottomRightRadius = '14px';
+          }
+        }
+      });
+    });
+
+    trackElement.addEventListener('mouseenter', () => {
+      trackElement.classList.add('playlist__track--hover');
+      if (index === array.length - 1) {
+        trackElement.style.borderBottomLeftRadius = '14px';
+        trackElement.style.borderBottomRightRadius = '14px';
+      }
+    });
+    trackElement.addEventListener('mouseleave', () => {
+      trackElement.classList.remove('playlist__track--hover');
+    });
   });
 };
