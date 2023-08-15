@@ -761,6 +761,20 @@ body {
   border: 1px solid #444;
   border-radius: 15px;
   margin-top: 15px;
+  transition: 0.3s;
+}
+@media (max-width: 420px) {
+  .music__list {
+    width: 330px;
+  }
+}
+@media (max-width: 370px) {
+  .music__list {
+    width: 290px;
+  }
+}
+.music__list:hover {
+  box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
 }
 
 .playlist {
@@ -803,8 +817,17 @@ body {
   justify-self: center;
   display: grid;
   grid-template-rows: 6px auto;
+  transition: 0.3s;
 }
-@media (max-width: 400px) {
+.player:hover {
+  box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
+}
+@media (max-width: 420px) {
+  .player {
+    width: 330px;
+  }
+}
+@media (max-width: 370px) {
   .player {
     width: 290px;
   }
@@ -844,7 +867,7 @@ body {
   border-left: 20px solid #444;
 }
 .player .controls .toggle-play.play:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 .player .controls .toggle-play.pause {
   height: 15px;
@@ -871,7 +894,7 @@ body {
   width: 5px;
 }
 .player .controls .toggle-play.pause:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 .player .controls .name {
   font-size: 20px;
