@@ -121,4 +121,5 @@ export const audioPlayer = () => {
       trackElement.classList.remove('playlist__track--hover');
     });
   });
+  return currentAudio;
 };

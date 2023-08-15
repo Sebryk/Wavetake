@@ -755,25 +755,31 @@ body {
   }
 }
 .music__list {
-  width: 352px;
+  width: 380px;
   display: flex;
   justify-content: center;
   border: 1px solid #444;
-  border-top: none;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
 }
 
 .playlist {
   width: 100%;
 }
 .playlist__track {
-  border: 0.5px rgba(148, 148, 148, 0.2) solid;
+  border-top: 0.5px rgba(148, 148, 148, 0.2) solid;
+  border-bottom: 0.5px rgba(148, 148, 148, 0.2) solid;
   padding: 16px;
   cursor: pointer;
   transition: 0.3s;
 }
-.playlist__track:last-of-type {
+.playlist__track:first-child {
+  border-top: none;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.playlist__track:last-child {
+  border-bottom: none;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }

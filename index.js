@@ -21,7 +21,7 @@ showMoreBtn();
 
 /* ------------------------------ AUdio Player ------------------------------ */
 
-audioPlayer();
+export const currentAudio = audioPlayer();
 
 /* ----------------------------- Pop Up"---------------------------- */
 
