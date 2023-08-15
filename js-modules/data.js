@@ -197,26 +197,26 @@ export const musicData = [
   {
     id: '2',
     trackName: 'Music Track 2',
-    trackUrl: '../audio/Track_2.wav',
+    trackUrl: '../audio/Track_1.mp3',
   },
   {
     id: '3',
     trackName: 'Music Track 3',
-    trackUrl: '../audio/Track_3.wav',
+    trackUrl: '../audio/Track_1.mp3',
   },
   {
     id: '4',
     trackName: 'Music Track 4',
-    trackUrl: '../audio/Track_4.wav',
+    trackUrl: '../audio/Track_1.mp3',
   },
   {
     id: '5',
     trackName: 'Music Track 5',
-    trackUrl: '../audio/Track_5.wav',
+    trackUrl: '../audio/Track_1.mp3',
   },
   {
     id: '6',
     trackName: 'Music Track 6',
-    trackUrl: '../audio/Track_6.mp3',
+    trackUrl: '../audio/Track_1.mp3',
   },
 ];

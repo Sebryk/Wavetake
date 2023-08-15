@@ -205,7 +205,6 @@ body {
   height: 100%;
   overflow: hidden;
   width: 100%;
-  position: fixed;
 }
 
 /* -------------------------- Header and Navigation ------------------------- */
@@ -773,8 +772,10 @@ body {
     width: 290px;
   }
 }
-.music__list:hover {
-  box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
+@media (hover: hover) {
+  .music__list:hover {
+    box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
+  }
 }
 
 .playlist {
@@ -819,8 +820,10 @@ body {
   grid-template-rows: 6px auto;
   transition: 0.3s;
 }
-.player:hover {
-  box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
+@media (hover: hover) {
+  .player:hover {
+    box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
+  }
 }
 @media (max-width: 420px) {
   .player {

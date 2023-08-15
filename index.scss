@@ -24,7 +24,7 @@ body {
   height: 100%;
   overflow: hidden;
   width: 100%;
-  position: fixed;
+  // position: fixed;
 }
 
 
@@ -622,8 +622,10 @@ display: none;
     @media (max-width: 370px) {
       width: 290px;
     }
-    &:hover {
-      box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
+      }
     }
   }
 }
@@ -669,8 +671,10 @@ display: none;
   display: grid;
   grid-template-rows: 6px auto;
   transition: 0.3s;
-  &:hover {
-    box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
+  @media (hover: hover){
+    &:hover {
+      box-shadow: 1px 3px 10px -1px rgba(67, 66, 66, 0.2);
+    }
   }
 
   @media (max-width: 420px) {
