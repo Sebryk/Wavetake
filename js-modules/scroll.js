@@ -28,7 +28,7 @@ export const scroll = () => {
 
   /* -------- Scroll Icon Behavior and Navigation Shadow When Scrolling ------- */
 
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
   window.addEventListener('scroll', () => {
     const scroll = window.scrollY;
 
