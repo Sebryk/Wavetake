@@ -968,29 +968,6 @@ display: none;
   align-items: center;
   padding: 20px;
   position: relative;
-
-  &__input{
-    &-warning{
-      font-size: 12px;
-      color: #e67171;
-      &--email{
-        position: absolute;
-        top: 82px;
-        left: 20px;
-      }
-      &--name{
-        position: absolute;
-        top: 172px;
-        left: 20px;
-      }
-      &--textarea{
-        position: absolute;
-        top: 352px;
-        left: 20px;
-      }
-    }
-  }
-  
   
   &__input-email {
     width: 100%;

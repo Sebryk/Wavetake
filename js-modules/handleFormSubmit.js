@@ -21,16 +21,11 @@ export const handleFormSubmit = () => {
   const submitForm = e => {
     e.preventDefault();
 
-    const form = document.querySelector('.contacts__form');
     const formDesc = document.querySelector('.contacts__text');
     const nameInput = document.querySelector('.form__input-name');
     const emailInput = document.querySelector('.form__input-email');
     const messageInput = document.querySelector('.form__textarea');
     const formBtn = document.querySelector('.form__btn');
-
-    const nameWarningElement = `<p class="form__input-warning form__input-warning--name">Please enter your name</p>`;
-    const emailWarningElement = `<p class="form__input-warning form__input-warning--email">Please enter your e-mail address</p>`;
-    const messageWarningElement = `<p class="form__input-warning form__input-warning--textarea">Please enter a message</p>`;
 
     if (nameInput.value && emailInput.value && messageInput.value) {
       const database = getDatabase();
