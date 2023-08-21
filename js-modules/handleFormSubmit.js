@@ -15,7 +15,6 @@ export const handleFormSubmit = () => {
     appId: '1:641202025768:web:d369ced38481ab2ba6cc1d',
   };
 
-  // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 
   const submitForm = e => {

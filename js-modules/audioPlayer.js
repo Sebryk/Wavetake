@@ -42,7 +42,6 @@ export const audioPlayer = () => {
 
     const playBtn = audioPlayer.querySelector('.controls .toggle-play');
     playBtn.addEventListener('click', e => {
-      console.log(e.target);
       if (audio.paused) {
         playBtn.classList.remove('play');
         playBtn.classList.add('pause');

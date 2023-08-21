@@ -191,32 +191,32 @@ export const data = [
 export const musicData = [
   {
     id: '1',
-    trackName: 'Music Track 1',
-    trackUrl: '../audio/Track_1.mp3',
+    trackName: 'Drop It',
+    trackUrl: 'https://firebasestorage.googleapis.com/v0/b/wavetake-fd3c8.appspot.com/o/Drop%20It.mp3?alt=media&token=50464473-23dd-4a1e-b518-e84e7266a270',
   },
   {
     id: '2',
-    trackName: 'Music Track 2',
-    trackUrl: '../audio/Track_2.mp3',
+    trackName: 'Bright Sunshine',
+    trackUrl: 'https://firebasestorage.googleapis.com/v0/b/wavetake-fd3c8.appspot.com/o/Bright%20Sunshine.mp3?alt=media&token=e67afa95-d024-4243-ba90-2f370932185e',
   },
   {
     id: '3',
-    trackName: 'Music Track 3',
-    trackUrl: '../audio/Track_3.mp3',
+    trackName: 'Runaway',
+    trackUrl: 'https://firebasestorage.googleapis.com/v0/b/wavetake-fd3c8.appspot.com/o/Runaway.mp3?alt=media&token=b51c7b26-f1c9-47cc-9a00-3a48eb088402',
   },
   {
     id: '4',
-    trackName: 'Music Track 4',
-    trackUrl: '../audio/Track_4.mp3',
+    trackName: 'Rock It',
+    trackUrl: 'https://firebasestorage.googleapis.com/v0/b/wavetake-fd3c8.appspot.com/o/Rockit.mp3?alt=media&token=ad1224b7-d8b3-47f5-8452-3b038b08f49d',
   },
   {
     id: '5',
-    trackName: 'Music Track 5',
-    trackUrl: '../audio/Track_5.mp3',
+    trackName: "Dont't Make Me",
+    trackUrl: "https://firebasestorage.googleapis.com/v0/b/wavetake-fd3c8.appspot.com/o/Don't%20Make%20Me.mp3?alt=media&token=3f39b9df-0e7a-42a4-a000-eccb3e4cd75c",
   },
   {
     id: '6',
-    trackName: 'Music Track 6',
-    trackUrl: '../audio/Track_6.mp3',
+    trackName: "Lovin' You",
+    trackUrl: "https://firebasestorage.googleapis.com/v0/b/wavetake-fd3c8.appspot.com/o/Lovin'%20You.mp3?alt=media&token=16ac8439-025e-4fef-ab5f-d46de73a1b85",
   },
 ];
