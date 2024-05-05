@@ -23,9 +23,9 @@ export const thumbnail = () => {
   data.forEach(el =>
     popupWindow.insertAdjacentHTML(
       'beforeend',
-      `<iframe class="popup__video" id="item-${el.id}" 
+      `<iframe class="popup__video" id="item-${el.id}"
       title="vimeo-player" src="${el.videoUrl}"
-      allowfullscreen></iframe> `
+      allowfullscreen style="display: none;"></iframe> `
     )
   );
 };

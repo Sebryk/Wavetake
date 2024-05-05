@@ -8,6 +8,9 @@
   <link rel="shortcut icon" href="./icons/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="60x60" href="./icons/favicon/favicon.ico">
   <link rel="stylesheet" href="index.css">
+  <!-- <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js" type="module"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js" type="module"></script>
+  <script src="./js-modules/firebaseConfig.js" type="module"></script> -->
   <script src="./index.js" type="module"></script>
   <title>Wavetake</title>
 </head>
@@ -31,9 +34,10 @@
     </nav>
     <div class="header__content" data-id="section">
       <a class="header__scroll scroll" href="#portfolio">
-        <div class="header__scroll-icon"></div>
+        <div class="header__scroll-icon">
+          <h1 class="header__scroll-title">Make it sound better</h1>
+        </div>
       </a>
-      <h1 class="header__content-text">Make it sound better</h1>
     </div>
   </header>
   <!-- -------------------------- Thumbnail Gallery -------------------------- -->
@@ -42,13 +46,21 @@
     </div>
     <button class="works__btn btn" type="button">Show More</button>
   </main>
+  <!-- ---------------------------- Music Gallery ----------------------------- -->
+  <section class="music">
+    <h2 class="music__title">Our Music</h2>
+    <div class="music__wrap">
+    </div>
+    <div class="music__list">
+    </div>
+  </section>
   <section class="about" id="about" data-id="section">
     <h2 class="about__title">What we do</h2>
     <div class="about__wrap">
       <div class="about__content">
         <div class="about__content-text">
           <h3 class="about__content-title">Music Production</h3>
-          <p class="about__content-desc">Professional audio and music production in different genres for all needs:
+          <p class="about__content-desc">Professional music and music production in different genres for all needs:
             commercials, movies, video games, animations, events.</p>
         </div>
         <img class="about__content-icon about__content-icon--speaker" src="./icons/speaker.svg" alt="Speaker Icon">
@@ -57,7 +69,7 @@
         <div class="about__content-text">
           <h3 class="about__content-title">Sound Design</h3>
           <p class="about__content-desc">Sound design and foley from scratch using the best analog and digital equipment
-            with a modern audio production techniques.</p>
+            with a modern music production techniques.</p>
         </div>
         <img class="about__content-icon about__content-icon--headphones" src="./icons/headphones.svg"
           alt="Headphones Icon">
@@ -66,13 +78,13 @@
         <div class="about__content-text">
           <h3 class="about__content-title">SFX Library</h3>
           <p class="about__content-desc">Unique sound effects library created by recording or synthesizing sounds,
-            designed to supplement audio-visual productions.</p>
+            designed to supplement music-visual productions.</p>
         </div>
         <img class="about__content-icon about__content-icon--mixer" src="./icons/mixer.svg" alt="Mixer Icon">
       </div>
       <div class="about__content">
         <div class="about__content-text">
-          <h3 class="about__content-title">Restoration Audio</h3>
+          <h3 class="about__content-title">Restoration music</h3>
           <p class="about__content-desc">Improving quality of the sound, removing unwanted noises or distortions that
             may have occurred during recording.</p>
         </div>
@@ -85,10 +97,11 @@
     <h2 class="contacts__title">Contacts</h2>
     <p class="contacts__text">Feel free to contact us. We really love to communicate with our clients.</p>
     <form class="contacts__form form">
-      <input class="form__input-email" type="email" id="email" placeholder="Email Adress">
-      <input class="form__input-name" type="text" id="name" placeholder="Full Name">
+      <input class="form__input-email" type="email" id="email" placeholder="Email Adress" autocomplete="off">
+      <input class="form__input-name" type="text" id="name" placeholder="Full Name" autocomplete="off">
       <textarea class="form__textarea" name="comments" id="comments" cols="30" rows="10"
         placeholder="Your Comments"></textarea>
+
       <button class="form__btn btn" type="submit">Send</button>
     </form>
     <a class="contacts__scroll" href="#header">

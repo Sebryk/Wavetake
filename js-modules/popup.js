@@ -1,4 +1,4 @@
-import { data } from './data.js';
+import { currentAudio } from '../index.js';
 
 export const popUp = () => {
   const thumbnailItem = document.querySelectorAll('.thumbnail__item');
@@ -13,7 +13,10 @@ export const popUp = () => {
         el.id;
         for (let i = 0; i < video.length; i++) {
           if (el.id == i + 1) {
-            video[i].classList.add('popup__video--show');
+            video[i].style.display = 'block';
+            setTimeout(() => {
+              return video[i].classList.add('popup__video--show');
+            }, 100);
           }
         }
       })
@@ -23,6 +26,7 @@ export const popUp = () => {
   showVideo();
 
   const openPopup = () => {
+    currentAudio.pause();
     popupClose.classList.add('popup__close--show');
     popupWindow.classList.add('popup--show');
     body.classList.add('body__lock');
@@ -33,13 +37,20 @@ export const popUp = () => {
     popupWindow.classList.remove('popup--show');
     body.classList.remove('body__lock');
     video.forEach(el => stopVideo(el));
-    video.forEach(el => el.classList.remove('popup__video--show'));
+    video.forEach(el => {
+      setTimeout(() => {
+        return (el.style.display = 'none');
+      }, 200);
+      el.classList.remove('popup__video--show');
+    });
   };
 
   const stopVideo = video => {
-    const saveAttribute = video.getAttribute('src');
-    video.setAttribute('src', '');
-    video.setAttribute('src', saveAttribute);
+    if (video.classList.contains('popup__video--show')) {
+      const saveAttribute = video.getAttribute('src');
+      video.setAttribute('src', '');
+      video.setAttribute('src', saveAttribute);
+    }
   };
 
   thumbnailItem.forEach(el => el.addEventListener('click', openPopup));
